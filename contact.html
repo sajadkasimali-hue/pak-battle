@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — PakBattle Esports</title>
+<link rel="icon" href="assets/logo.png" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="header"></div>
+<main class="container-md" style="padding:2.5rem 1rem;">
+  <div class="text-center">
+    <h1 class="section-title"><span class="neon-text">Get in</span> <span class="gold-text">Touch</span></h1>
+    <p class="muted" style="margin-top:.5rem;">We respond fastest on WhatsApp.</p>
+  </div>
+
+  <div class="grid grid-2" style="margin-top:2rem;">
+    <div class="glass card" id="contactBox"></div>
+
+    <form id="reviewForm" class="glass card" style="display:flex; flex-direction:column; gap:1rem;">
+      <h3 class="gold-text" style="font-size:.85rem; font-weight:800; text-transform:uppercase; letter-spacing:.1em;">Leave a Review</h3>
+      <div>
+        <span style="display:block; margin-bottom:.35rem; font-size:.68rem; font-weight:700; text-transform:uppercase; letter-spacing:.12em; color:var(--muted-foreground);">Rating</span>
+        <div class="stars" id="starRow">
+          <button type="button" data-n="1">★</button><button type="button" data-n="2">★</button><button type="button" data-n="3">★</button><button type="button" data-n="4">★</button><button type="button" data-n="5">★</button>
+        </div>
+      </div>
+      <label class="field"><span>Your Review</span><textarea id="comment" rows="4" maxlength="500" placeholder="Share your experience..."></textarea></label>
+      <button type="submit" class="btn-neon">Post Review</button>
+      <p id="reviewHint" class="muted text-center" style="font-size:.75rem;"></p>
+    </form>
+  </div>
+</main>
+<div id="footer"></div>
+<script type="module" src="js/contact.js"></script>
+</body>
+</html>

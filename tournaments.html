@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tournaments — PakBattle Esports</title>
+<meta name="description" content="Browse all upcoming PUBG Mobile tournaments. Erangel, Livik, TDM." />
+<link rel="icon" href="assets/logo.png" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="header"></div>
+<main class="section">
+  <div class="text-center">
+    <h1 class="section-title"><span class="neon-text">All</span> <span class="gold-text">Tournaments</span></h1>
+    <p class="muted" style="margin-top:.5rem;">Pick your battle. Pay the entry. Win big.</p>
+  </div>
+
+  <div style="margin-top:2rem; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem;">
+    <div class="tabs-row" id="filterRow">
+      <button class="pill active" data-filter="all">All</button>
+      <button class="pill" data-filter="erangel">Erangel</button>
+      <button class="pill" data-filter="livik">Livik</button>
+      <button class="pill" data-filter="tdm">TDM</button>
+    </div>
+    <input id="searchInput" type="text" placeholder="Search tournaments" class="field" style="margin:0; width:220px;" />
+  </div>
+
+  <div id="status" class="page-loading">Loading...</div>
+  <div id="grid" class="grid grid-3" style="margin-top:2rem;"></div>
+</main>
+<div id="footer"></div>
+<script type="module" src="js/tournaments.js"></script>
+</body>
+</html>

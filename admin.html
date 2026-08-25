@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Admin — PakBattle Esports</title>
+<link rel="icon" href="assets/logo.png" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="header"></div>
+<main class="section">
+  <h1 class="section-title"><span class="neon-text">Admin</span> <span class="gold-text">Panel</span></h1>
+  <div id="gate" class="page-loading">Checking access...</div>
+
+  <div id="adminUi" style="display:none;">
+    <div class="admin-tabbar" id="adminTabs">
+      <button class="pill active" data-tab="tournaments">🏆 Tournaments</button>
+      <button class="pill" data-tab="payments">💳 Payments</button>
+      <button class="pill" data-tab="rooms">🔑 Room IDs</button>
+      <button class="pill" data-tab="results">🎖️ Results</button>
+      <button class="pill" data-tab="players">👥 Players</button>
+      <button class="pill" data-tab="settings">⚙️ Settings</button>
+    </div>
+    <div class="glass admin-panel" id="adminPanel"></div>
+  </div>
+</main>
+<div id="footer"></div>
+<script type="module" src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Login / Sign Up — PakBattle Esports</title>
+<link rel="icon" href="assets/logo.png" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="header"></div>
+<main class="auth-wrap">
+  <img class="logo" src="assets/logo.png" alt="" />
+  <h1 id="authTitle"><span class="neon-text">Welcome</span> <span class="gold-text">Back</span></h1>
+  <p id="authSub">Sign in to continue</p>
+
+  <form id="authForm" class="glass auth-form">
+    <div id="signupFields" style="display:none;">
+      <label class="field"><span>Full Name</span><input id="full_name" /></label>
+      <div class="two-col">
+        <label class="field"><span>PUBG UID</span><input id="pubg_uid" /></label>
+        <label class="field"><span>PUBG Username</span><input id="pubg_username" /></label>
+      </div>
+      <label class="field"><span>Mobile</span><input id="mobile" placeholder="03XX-XXXXXXX" /></label>
+    </div>
+    <label class="field"><span>Email</span><input id="email" type="email" required /></label>
+    <label class="field"><span>Password</span><input id="password" type="password" required /></label>
+    <label class="field" id="confirmField" style="display:none;"><span>Confirm Password</span><input id="confirm" type="password" /></label>
+
+    <button type="submit" id="submitBtn" class="btn-neon" style="width:100%;">Sign In</button>
+
+    <div class="form-foot">
+      <button type="button" id="toggleMode">Need an account? Sign up</button>
+      <button type="button" id="forgotBtn">Forgot password?</button>
+    </div>
+  </form>
+</main>
+<div id="footer"></div>
+<script type="module" src="js/auth-page.js"></script>
+</body>
+</html>

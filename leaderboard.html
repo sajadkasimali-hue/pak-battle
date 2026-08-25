@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Leaderboard — PakBattle Esports</title>
+<link rel="icon" href="assets/logo.png" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="header"></div>
+<main class="container-md" style="padding:2.5rem 1rem;">
+  <div class="text-center">
+    <h1 class="section-title"><span class="neon-text">Pakistan</span> <span class="gold-text">Leaderboard</span></h1>
+    <p class="muted" style="margin-top:.5rem;">The legends of PakBattle.</p>
+  </div>
+  <div class="tabs-row" style="justify-content:center; margin-top:1.5rem;" id="sortRow">
+    <button class="pill active" data-sort="total_earnings">🪙 Top Earnings</button>
+    <button class="pill" data-sort="total_wins">🏆 Most Wins</button>
+    <button class="pill" data-sort="total_kills">🎯 Highest Kills</button>
+  </div>
+  <div id="list" class="glass" style="margin-top:2rem; border-radius:1.25rem; padding:.75rem;"></div>
+</main>
+<div id="footer"></div>
+<script type="module" src="js/leaderboard.js"></script>
+</body>
+</html>
